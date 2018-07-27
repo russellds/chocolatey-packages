@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>vscode-settingssync</id>
+    <title>Visual Studio Code PowerShell Extension</title>
+    <version>1.0.0.0</version>
+    <authors>Shan Khan</authors>
+    <owners>Russell Slater</owners>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync</projectUrl>
+    <projectSourceUrl>https://github.com/shanalikhan/code-settings-sync</projectSourceUrl>
+    <packageSourceUrl>https://github.com/russellds/chocolatey-packages/tree/master/manual/vscode-settingssync</packageSourceUrl>
+    <iconUrl>https://cdn.rawgit.com/russellds/chocolatey-packages/911e4631/icons/settingssync.png</iconUrl>
+    <licenseUrl>https://marketplace.visualstudio.com/items/ms-vscode.PowerShell/license</licenseUrl>
+    <docsUrl>https://github.com/shanalikhan/code-settings-sync/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/shanalikhan/code-settings-sync/issues</bugTrackerUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Settings Sync for Visual Studio Code</summary>
+    <description>
+This Visual Studio Code extension will Synchronize Settings, Snippets, Themes, File Icons, Launch, Keybindings, Workspaces and Extensions Across Multiple Machines Using GitHub Gist.
+
+## Key Features
+
+1. Use your GitHub account token and Gist.
+2. Easy to Upload and Download on one click.
+3. Show a summary page at the end with details about config and extensions effected.
+4. Auto Download Latest Settings on Startup.
+5. Auto upload Settings on file change.
+6. Share the Gist with other users and let them download your settings.
+7. Supports GitHub Enterprise
+
+## It Syncs
+
+All extensions and complete User Folder that Contains:
+
+1. Settings File
+2. Keybinding File
+3. Launch File
+4. Snippets Folder
+5. VSCode Extensions Settings
+6. Workspaces Folder
+
+## Notes
+
+* The package always installs the latest version of the extension.
+  The version of the Chocolatey package reflects not the version of the extension.
+    </description>
+    <tags>microsoft visualstudiocode vscode extension setting sync settingssync</tags>
+    <releaseNotes>https://marketplace.visualstudio.com/items/Shan.code-settings-sync/changelog</releaseNotes>
+    <dependencies>
+      <dependency id="vscode" version="1.2.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
